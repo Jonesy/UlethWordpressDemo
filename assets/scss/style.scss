@@ -1,0 +1,33 @@
+/*
+Theme Name: Ingadget
+Theme URI: http://www.ingadget.dev/
+Description: Workshop theme
+Author: Joshua R. Jones
+Author URI: http://www.general-metrics.com
+Version: 1.0
+*/
+
+/**/
+@import "compass/css3";
+@import "vendor/bootstrap";
+@import "helpers/palette";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+@import "typography/base";
+
+@import "components/hero";
+@import "components/comments";
+@import "components/tag";
+@import "components/buttons";
+
+@import "layouts/base";
+@import "layouts/home";
+@import "layouts/single";
+@import "layouts/reviews";
+@import "layouts/category";
+
+@import "layouts/960";
+@import "layouts/768";
+@import "layouts/640";
+@import "layouts/320";

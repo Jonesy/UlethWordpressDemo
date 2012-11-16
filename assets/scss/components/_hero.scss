@@ -1,0 +1,78 @@
+/* Base hero unit */
+.hero-unit {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-bottom: 1px solid $border;
+  @include border-radius(0);
+
+  &.hero-footer {
+    border: {
+      top: 1px solid $border;
+      bottom: none;
+    };
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p.byline {
+    font-size: 14px;
+  }
+
+  .tag a {
+    top: 0;
+    @include gadget-bg($pink);
+
+    &:before {
+      width: 30px;
+      height: 30px;
+      top: 16px;
+
+    }
+  }
+}
+
+.feature-box {
+  width: 33.3%;
+  float: left;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    height: 50%;
+    padding: 5%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    @include box-sizing(border-box);
+    @include box-shadow(inset 0 0 5px rgba(black, 0));
+    @include transition(all 0.25s ease-in);
+    @include text-shadow(0 0 10px rgba(black, 0.5));
+    @include background(linear-gradient(top left, rgba($yellow, 0.85), rgba($green, 0.85)));
+
+    &:hover {
+      text-decoration: none;
+      @include box-shadow(inset 0 0 25px rgba(black, 0.5));
+    }
+
+    &:active {
+      @include box-shadow(inset 0 0 125px rgba(black, 0.75));
+    }
+  }
+
+  &:first-child a {
+    @include background(linear-gradient(top left, rgba($pink, 0.85), rgba($orange, 0.85)));
+  }
+
+
+  &:last-child a {
+    @include background(linear-gradient(top left, rgba($purple, 0.85), rgba($yellow, 0.85)));
+  }
+}

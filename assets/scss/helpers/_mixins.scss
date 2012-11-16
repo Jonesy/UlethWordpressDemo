@@ -1,0 +1,32 @@
+@mixin gadget-bg($color: $orange) {
+  background: $color;
+
+  &:before {
+    background-color: darken($color, 20%);
+  }
+}
+
+@mixin keyframes($name) {
+  @keyframes $name {
+    @content;
+  }
+
+  @-moz-keyframes $name {
+    @content;
+  }
+
+  @-webkit-keyframes $name {
+    @content;
+  }
+
+  @-o-keyframes $name {
+    @content;
+  }
+}
+
+@mixin animation($animation, $duration, $iteration) {
+  animation: $animation $duration $iteration;
+  -moz-animation: $animation $duration $iteration;
+  -webkit-animation: $animation $duration $iteration;
+  -o-animation: $animation $duration $iteration;
+}

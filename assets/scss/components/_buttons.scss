@@ -1,0 +1,70 @@
+@include keyframes(yak) {
+  0% {
+    @include skewY(0deg);
+  }
+  50% {
+    @include skewY(40deg);
+  }
+  100% {
+    @include skewY(0deg);
+  }
+};
+
+.comments {
+  margin-top: 14px;
+  float: right;
+  padding: 0 5px;
+  display: inline-block;
+  position: relative;
+  line-height: 30px;
+  background: $orange;
+  color: #fff;
+  @extend ._oswald;
+
+  .gadget & {
+    background-color: $purple;
+    i {
+      border-top-color: $purple;
+    }
+  }
+
+  .mobile & {
+    background-color: $yellow;
+
+    &:hover {
+      color: $purple;
+    }
+
+    i {
+      border-top-color: $yellow;
+    }
+  }
+
+  .video-games & {
+    background-color: $green;
+    i {
+      border-top-color: $green;
+    }
+  }
+
+  i {
+    $tri-width: 5px;
+    margin-left: -$tri-width;
+    position: absolute;
+    bottom: -#{($tri-width  * 2)};
+    left: 50%;
+    content: "";
+    border: $tri-width solid transparent;
+    border-top-color: $orange;
+    @include transition(all 0.25s ease-in);
+  }
+
+  &:hover {
+    color: $yellow;
+    text-decoration: none;
+
+    & i {
+      @include animation(yak, 0.25s, infinite);
+    }
+  }
+}

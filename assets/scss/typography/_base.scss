@@ -1,0 +1,22 @@
+/**
+  Typography
+  ==========
+*/
+._sanchez {
+  font-family: 'Sanchez', sans-serif;
+}
+
+._oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  @extend ._sanchez
+}
+
+a {
+  @include transition(color 0.25s ease-in);
+  &:hover {
+    color: $orange;
+  }
+}

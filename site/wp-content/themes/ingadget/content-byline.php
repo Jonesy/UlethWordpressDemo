@@ -1,0 +1,1 @@
+<p class="byline">By <?php the_author_posts_link(); ?> | <?php the_time('l, F jS, Y \a\t g:ia'); ?></p>

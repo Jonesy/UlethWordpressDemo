@@ -1,0 +1,59 @@
+.tag {
+  position: relative;
+  z-index: 1;
+
+  a {
+    padding: 0 10px 0 30px;
+    position: absolute;
+    top: -21px;
+    left: -31px;
+    @extend ._oswald;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    @include transition(all 0.25s ease-in);
+    @include box-shadow(0 2px 4px rgba(black, 0.25), inset 0 0 5px rgba(black, 0));
+
+    &:before {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 17px;
+      left: 1px;
+      content: "";
+      z-index: -1;
+      @include skewY(20deg);
+    }
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      @include box-shadow(3px 2px 4px rgba(black, 0.5), inset 0 0 5px rgba(black, 0.25));
+    }
+
+    @include gadget-bg;
+
+  }
+
+  .windows & a {
+    @include gadget-bg(#0CF);
+  }
+
+  .apple & a {
+    @include gadget-bg(#333);
+  }
+
+  .gadget & a {
+    @include gadget-bg($purple);
+  }
+
+  .mobile & a {
+    @include gadget-bg($yellow);
+  }
+
+  .video-games & a {
+    @include gadget-bg($green);
+  }
+}

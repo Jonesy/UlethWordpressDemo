@@ -1,0 +1,76 @@
+/* Comments */
+._comment-button {
+  padding: 0 10px;
+  @extend ._oswald;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 30px;
+  border: none;
+  background: #FA4B2A;
+  color: #fff;
+  @include transition(all 0.25s ease-in);
+
+  &:hover {
+    text-decoration: none;
+    color: $yellow;
+    background: $green;
+  }
+}
+
+#comments {
+  margin: 20px;
+
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 10px 0;
+
+      a {
+        color: $orange;
+      }
+
+      .comment-meta {
+        font-size: 10px;
+      }
+
+      .comment-author {
+        @extend ._oswald;
+        font-size: 18px;
+        font-style: italic;
+        text-transform: uppercase;
+
+        cite {
+          font-style: italic;
+        }
+      }
+
+      a.comment-reply-link {
+        color: #fff;
+        @extend ._comment-button;
+      }
+    }
+  }
+}
+
+.comments-header {
+  margin: 0 -20px;
+  padding: 0 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.comments-form {
+  margin: 10px 0 0;
+
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+input#submit {
+  @extend ._comment-button;
+}

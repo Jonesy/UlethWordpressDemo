@@ -1,0 +1,26 @@
+.reviews {
+  article.review-post {
+    margin: 0 0 20px;
+  }
+
+  .review-image {
+    position: relative;
+  }
+
+  .price {
+    $dimensions: 60px;
+    min-width: $dimensions;
+    min-height: $dimensions;
+    position: absolute;
+    top: -($dimensions / 4);
+    left: -($dimensions / 4);
+    @extend ._oswald;
+    font-size: 18px;
+    line-height: $dimensions;
+    text-align: center;
+    background: $orange;
+    color: #fff;
+    @include border-radius(50px);
+    @include rotate(-25deg);
+  }
+}
