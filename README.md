@@ -28,6 +28,7 @@ Listed are some links relevant to the workshop and web development in general.
 * [Sublime Text 2](http://www.sublimetext.com/) Favorite text editor
 * [Sequel Pro](http://www.sequelpro.com/) Great, free MySQL admin tool for localhost
 * [MAMP](http://www.mamp.info/) Alternative to setting up PHP/MySQL manually on your local machine, recommended for beginners
+* [iTerm 2](http://www.iterm2.com/) Terminal replacement app for OS X
 
 ### Wordpress/CSS Tutorials & Resouces
 * [CSS Tricks](http://css-tricks.com/)
@@ -44,3 +45,12 @@ Listed are some links relevant to the workshop and web development in general.
 * [DailyJS](http://dailyjs.com/)
 * [Addy Osmani](http://addyosmani.com/) (Absurd amount of free resources)
 * [Paul Irish](http://paulirish.com/) (Both guys on the Google Chrome Dev relations team, lots of wonderful resources)
+
+**All images are copyrighted by their respective copyright owners. Please don't use commercially or otherwise.**
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/ca/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/2.5/ca/88x31.png" /></a>
+
+Attribution-NonCommercial
+CC BY-NC
+
+This license lets others remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms.
