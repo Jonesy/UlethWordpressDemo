@@ -18,7 +18,9 @@
             <div class="feature-box">
               <?php if (has_post_thumbnail()) {
                 the_post_thumbnail('feature-hero');
-              } ?>
+              } else { ?>
+                <img src="http://placehold.it/600x600">
+              <?php } ?>
               <a href="<?php the_permalink(); ?>">
                 <h3><?php the_title(); ?></h3>
                 <p class="byline">By <?php the_author(); ?></p>
