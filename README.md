@@ -11,6 +11,7 @@ The following instructions are some specific steps that compliment the [very wel
 1. If working off a server, upload the contents of the `site` folder to it.
 1. Import `databases/indgadet.sql` to a MySQL server.
 1. Configure `site/wp-config.php` to your MySQL install.
+1. To start Compass without an app, `cd ~/Sites/Workshop WP/` to project folder and run `$ compass watch --config="config/config.rb"`. This file is in a separate folder so if the project grows and has multiple configurations for Compass or any other build system, they can be tucked away here.
 1. Hack away.
 
 ## Links
